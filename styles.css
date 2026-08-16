@@ -35,7 +35,7 @@ header { background: var(--surface); border-bottom: 1px solid var(--border); }
 .hero img { width: 92px; height: 92px; border-radius: 22px; box-shadow: 0 10px 30px rgba(0,0,0,.25); margin-bottom: 22px; }
 .hero h1 { font-size: 44px; font-weight: 800; letter-spacing: -0.5px; }
 .hero .kicker { color: var(--accent); font-weight: 700; letter-spacing: 2px; font-size: 13px; text-transform: uppercase; margin-bottom: 10px; }
-.hero p.tagline { font-size: 20px; color: #d9ece3; margin-top: 10px; }
+.hero p.tagline { font-size: 20px; color: #d9ece3; margin-top: 10px; max-width: 560px; margin-left: auto; margin-right: auto; }
 .hero .soon { display: inline-block; margin-top: 26px; background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.25); color: #fff; padding: 10px 22px; border-radius: 999px; font-weight: 700; font-size: 14px; }
 
 /* Sections */
@@ -69,7 +69,19 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: cente
 footer a { color: var(--primary); text-decoration: none; font-weight: 600; }
 footer .copy { margin-right: auto; }
 
+/* Phones: the brand takes its own row so all four links fit beneath it,
+   and the type scale steps down to match the narrower measure. */
 @media (max-width: 560px) {
-  .hero h1 { font-size: 34px; }
-  .prose { padding: 26px; }
+  .nav { flex-wrap: wrap; gap: 6px 4px; padding: 12px 0 10px; }
+  .nav .brand { flex-basis: 100%; }
+  .nav a:not(.brand) { font-size: 13px; padding: 5px 8px; }
+  .hero { padding: 48px 20px 56px; }
+  .hero img { width: 76px; height: 76px; }
+  .hero h1 { font-size: 30px; }
+  .hero p.tagline { font-size: 17px; }
+  section { padding: 40px 0; }
+  h2 { font-size: 22px; }
+  .admins { padding: 24px; }
+  .prose { padding: 26px; margin: 28px 0; }
+  .prose h1 { font-size: 26px; }
 }
