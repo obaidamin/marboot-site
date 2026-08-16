@@ -1,0 +1,75 @@
+/* Marboot site — matches the app's Emerald Oasis palette. */
+:root {
+  --primary: #0E7A57;
+  --primary-dark: #0A5C42;
+  --primary-soft: #E7F4EE;
+  --accent: #E0A84E;
+  --bg: #F7F6F2;
+  --surface: #FFFFFF;
+  --text: #1B2A24;
+  --muted: #6B7B73;
+  --border: #E7E5DC;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+}
+
+.wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+
+/* Header */
+header { background: var(--surface); border-bottom: 1px solid var(--border); }
+.nav { display: flex; align-items: center; gap: 12px; padding: 14px 0; }
+.nav img { width: 34px; height: 34px; border-radius: 8px; }
+.nav .brand { font-size: 19px; font-weight: 800; color: var(--primary-dark); margin-right: auto; text-decoration: none; display: flex; align-items: center; gap: 10px; }
+.nav a { color: var(--muted); text-decoration: none; font-weight: 600; font-size: 14px; padding: 6px 10px; border-radius: 8px; }
+.nav a:hover { color: var(--primary); background: var(--primary-soft); }
+
+/* Hero */
+.hero { background: linear-gradient(160deg, var(--primary-dark), var(--primary)); color: #fff; text-align: center; padding: 72px 24px 84px; }
+.hero img { width: 92px; height: 92px; border-radius: 22px; box-shadow: 0 10px 30px rgba(0,0,0,.25); margin-bottom: 22px; }
+.hero h1 { font-size: 44px; font-weight: 800; letter-spacing: -0.5px; }
+.hero .kicker { color: var(--accent); font-weight: 700; letter-spacing: 2px; font-size: 13px; text-transform: uppercase; margin-bottom: 10px; }
+.hero p.tagline { font-size: 20px; color: #d9ece3; margin-top: 10px; }
+.hero .soon { display: inline-block; margin-top: 26px; background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.25); color: #fff; padding: 10px 22px; border-radius: 999px; font-weight: 700; font-size: 14px; }
+
+/* Sections */
+section { padding: 56px 0; }
+h2 { font-size: 26px; font-weight: 800; color: var(--primary-dark); margin-bottom: 8px; }
+.lede { color: var(--muted); max-width: 640px; margin-bottom: 28px; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 22px; }
+.card .emoji { font-size: 26px; }
+.card h3 { font-size: 16px; font-weight: 700; margin: 10px 0 6px; }
+.card p { font-size: 14px; color: var(--muted); }
+
+.admins { background: var(--primary-soft); border-radius: 20px; padding: 34px; margin-top: 8px; }
+.admins h2 { margin-bottom: 6px; }
+.admins p { color: var(--text); max-width: 640px; }
+
+/* Legal / prose pages */
+.prose { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 40px; margin: 48px 0; }
+.prose h1 { font-size: 30px; color: var(--primary-dark); margin-bottom: 4px; }
+.prose .updated { color: var(--muted); font-size: 14px; margin-bottom: 26px; }
+.prose h2 { font-size: 19px; margin: 28px 0 8px; }
+.prose p, .prose li { font-size: 15px; }
+.prose ul { padding-left: 22px; margin: 8px 0; }
+.prose li { margin: 5px 0; }
+.prose a { color: var(--primary); }
+
+/* Footer */
+footer { border-top: 1px solid var(--border); padding: 28px 0 40px; color: var(--muted); font-size: 14px; }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; }
+footer a { color: var(--primary); text-decoration: none; font-weight: 600; }
+footer .copy { margin-right: auto; }
+
+@media (max-width: 560px) {
+  .hero h1 { font-size: 34px; }
+  .prose { padding: 26px; }
+}
