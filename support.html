@@ -5,15 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Support — Marboot</title>
   <meta name="description" content="Get help with Marboot, report a problem, or get your mosque listed." />
-  <link rel="icon" href="icon.png" />
-  <link rel="stylesheet" href="styles.css?v=2" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=3" />
 </head>
 <body>
   <header>
-    <nav class="nav wrap">
-      <a class="brand" href="index.html"><img src="icon.png" alt="" />Marboot</a>
+    <nav class="nav wrap" aria-label="Main">
+      <a class="brand" href="index.html" aria-label="Marboot home">
+        <img class="symbol" src="assets/symbol-color.png" alt="" />
+        <img class="word" src="assets/wordmark-green.png" alt="Marboot" />
+      </a>
       <a href="index.html#features">Features</a>
-      <a href="index.html#mosques">For Mosques</a>
+      <a href="index.html#display">Wall display</a>
+      <a href="index.html#mosques">For mosques</a>
       <a href="privacy.html">Privacy</a>
       <a href="support.html">Support</a>
     </nav>
@@ -28,8 +37,11 @@
       <p>The fastest route is the app itself: <strong>Account → Contact us</strong> sends your message straight to us, attached to your account so we can help without back-and-forth.</p>
       <p>You can also email <a href="mailto:admin.marboot@gmail.com">admin.marboot@gmail.com</a>.</p>
 
-      <h2>Get your mosque on Marboot</h2>
+      <h2 id="mosque">Get your mosque on Marboot</h2>
       <p>If your mosque isn't listed yet, request it from inside the app (<strong>Account → Request a mosque</strong>) with the mosque's name and address, or email us the details. Mosque administrations that want to manage their own listing — publish iqamah times, events and announcements — should mention that in the request and we'll set up administrator access.</p>
+
+      <h2>Put the wall display on your masjid’s TV</h2>
+      <p>Administrators find their mosque’s display link under <strong>Mosque Settings → Display</strong> in the app. Open that link in the TV’s browser (or a TV stick, tablet or old phone), tap once for full screen, and leave it running. It stays live: any time you change from your phone shows up within seconds. The same display is built into the app under the TV icon on your mosque’s page.</p>
 
       <h2>Managing your account</h2>
       <ul>
@@ -42,9 +54,10 @@
 
   <footer>
     <div class="wrap">
-      <span class="copy">© 2026 Raha Labs LLC. All rights reserved.</span>
+      <span class="mark"><img class="symbol" src="assets/symbol-color.png" alt="" /><img class="word" src="assets/wordmark-green.png" alt="Marboot" /></span>
       <a href="privacy.html">Privacy Policy</a>
       <a href="support.html">Support</a>
+      <span class="copy">© 2026 Raha Labs LLC. All rights reserved.</span>
     </div>
   </footer>
 </body>
