@@ -31,7 +31,7 @@
   <main class="wrap">
     <article class="prose">
       <h1>Privacy Policy</h1>
-      <p class="updated">Effective August 19, 2026 · Marboot is published by Raha Labs LLC</p>
+      <p class="updated">Effective September 12, 2026 · Marboot is published by Raha Labs LLC</p>
 
       <p>Marboot connects mosques with the people who follow them. This policy explains what information the app handles, why, and the choices you have. The short version: we collect the minimum needed to run the service, we don't show ads, and we never sell your data.</p>
 
@@ -45,7 +45,7 @@
 
       <h2>Information handled on your device</h2>
       <ul>
-        <li><strong>Location.</strong> Used on your device to sort nearby mosques and events by distance and to point the qibla compass. Your location is not stored on our servers.</li>
+        <li><strong>Location.</strong> Used on your device to sort nearby mosques and events by distance and to point the qibla compass. One exception: when you pick a mosque for a home-screen widget, your approximate location is sent to our server for that one request so it can list the nearest mosques. It is used only to answer that request and is never stored.</li>
         <li><strong>Calendar.</strong> Only touched when you choose to add an event to your calendar.</li>
         <li><strong>Photos.</strong> Only for mosque administrators who choose a flyer image to import events from. The image is processed to extract event details.</li>
         <li><strong>Appearance settings</strong> such as color theme stay on your device.</li>
@@ -53,6 +53,9 @@
 
       <h2>Push notifications</h2>
       <p>If you allow notifications, we store a device push token so mosques you follow can reach you with prayer-time changes, events and announcements. Delivery uses Apple, Google and Expo notification services. You can turn notifications off per mosque in the app or entirely in your device settings.</p>
+
+      <h2>Home-screen widgets</h2>
+      <p>If you add a Marboot widget to your home screen, it fetches the chosen mosque's prayer times from our server — about once a day, and again when that mosque changes its times. To send that refresh, the widget registers a device token together with the mosques it shows, the same kind of token used for notifications. The registration is updated when you change or remove the widget, and removed when you delete your account. Widgets work without an account.</p>
 
       <h2>What mosque administrators can see</h2>
       <p>When you follow a mosque, that mosque's administrators see their follower count and, at most, an abbreviated display name — your first name and last initial, if you added a name to your account. They never see your email address, your location, your other followed mosques, or any other activity. Administrators cannot edit your account in any way; the only action available to them is removing a follower from their list, which notifies you.</p>
